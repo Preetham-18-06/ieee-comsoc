@@ -4,7 +4,7 @@ toggle.addEventListener('click', () => {
   const isOpen = nav.classList.toggle('open');
   toggle.setAttribute('aria-expanded', String(isOpen));
   toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
-  toggle.textContent = isOpen ? '×' : '☰';
+  toggle.textContent = isOpen ? '\u00D7' : '\u2630';
 });
 nav.querySelectorAll('a').forEach(link => link.addEventListener('click', () => {
   nav.classList.remove('open');
